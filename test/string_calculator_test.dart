@@ -12,4 +12,9 @@ void main() {
     expect(calculator.add('1'), 1);
   });
 
+  test('should return the sum of two numbers', () {
+    final calculator = StringCalculator();
+    expect(calculator.add('1,2'), 3);
+  });
+
 }
