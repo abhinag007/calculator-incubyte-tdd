@@ -17,4 +17,9 @@ void main() {
     expect(calculator.add('1,2'), 3);
   });
 
+  test('should handle an unknown amount of numbers', () {
+    final calculator = StringCalculator();
+    expect(calculator.add('1,2,3,4,5'), 15);
+  });
+
 }
